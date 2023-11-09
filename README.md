@@ -12,6 +12,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+- [Datasets](#datasets)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -32,7 +33,7 @@ MovieMood is a comprehensive project that combines two essential components: Sen
 
 - Preprocessing of text data.
 - Utilization of natural language processing (NLP) techniques.
-- Sentiment classification using machine learning and neural network algorithms.
+- Sentiment classification is achieved through the implementation of deep neural network algorithms, including Convolutional Neural Networks (CNNs).
 
 ### Movie Recommendation System
 
@@ -60,13 +61,14 @@ Here's how you can benefit from the project:
 - Perform sentiment analysis on movie reviews to gain valuable insights into user sentiments.
 - Evaluate the recommendation system in MovieMood using various metrics to ensure it meets your needs.
 
+## Datasets
+
+- [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews/data): The IMDB dataset contains 50,000 movie reviews, divided into 25,000 for training and 25,000 for testing, making it a valuable resource for binary sentiment classification in the field of natural language processing or text analytics.
+- [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata): Containing metadata for approximately 5,000 movies from TMDb, this dataset provides details like titles, release dates, genres, popularity, and ratings. It serves as a valuable resource for both movie recommendations and analyzing the factors that impact a movie's success.
+
 ## Contributing
 
 - Pei-Ju Wu (Emily)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more information.
 
 ## Contact
 
