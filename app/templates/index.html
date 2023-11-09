@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MovieMood</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Georgia, serif;
+      }
+
+      .container {
+        margin-top: 20px;
+      }
+
+      .jumbotron {
+        background-color: #638aa9;
+        color: #ffffff;
+        padding: 30px;
+      }
+
+      .btn-primary {
+        background-color: #326285;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #08283e;
+      }
+
+      .movie-form {
+        background-color: #f8f9fa;
+        border: 1px solid #d6d8db;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .alert.alert-info {
+        background-color: #c6daed;
+        border-color: #c6daed;
+        font-size: 20px;
+        color: #10334d;
+      }
+
+      .movie-details {
+        margin-top: 20px;
+      }
+
+      .table th,
+      .table td {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>MovieMood</h1>
+        <h2>Sentiment Analysis and Movie Recommendations</h2>
+      </div>
+      <div class="movie-form">
+        <form action="/" method="post">
+          <div class="form-group">
+            <label for="movie_id">Enter Movie ID:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="movie_id"
+              id="movie_id"
+              placeholder="e.g., 155"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Uncover</button>
+          <a href="/top_movies" , target="_blank"> Unlock Movie Mood!</a>
+        </form>
+      </div>
+
+      {% if title %}
+      <div class="movie-details">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">Movie Title: {{ title }}</h2>
+          </div>
+        </div>
+        <div class="alert alert-info">
+          {% if summary.num_reviews > 0 %}
+          <div class="summary-info">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Positive: {{ summary.positive }}</p>
+                <p>Negative: {{ summary.negative }}</p>
+              </div>
+              <div class="col-md-6">
+                <p>Total Number of Reviews: {{ summary.num_reviews }}</p>
+                <p>Rating: {{ summary.rating }}%</p>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div class="summary-info no-review">
+            <p>This movie review is not available.</p>
+          </div>
+          {% endif %}
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Reviews</h3>
+          </div>
+        </div>
+        <table class="table table-striped table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>Review</th>
+              <th>Sentiment</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for review, sentiment in reviews %}
+            <tr>
+              <td>{{ review }}</td>
+              <td>{{ sentiment }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">You May Also Like:</h3>
+          </div>
+        </div>
+        <table class="table table-striped table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>Title</th>
+              <th>Popularity</th>
+              <th>Weighted Rating</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for title, year, popularity, weighted_rating in recommendations
+            %}
+            <tr>
+              <td>{{ title }}</td>
+              <td>{{ popularity }}</td>
+              <td>{{ weighted_rating }}</td>
+              <td>{{ year }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
