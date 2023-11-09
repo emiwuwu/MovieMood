@@ -1,4 +1,4 @@
-# MovieMood 
+# MovieMood
 
 > Exploring Sentiment Analysis and Movie Recommendations
 
@@ -71,6 +71,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 Pei-Ju Wu
+
 - Email: emilywupeiju@gmail.com
 
 Project Link: [GitHub - MovieMood](https://github.com/emiwuwu/MovieMood)
