@@ -8,4 +8,8 @@ __pycache__/
 # Ignore OS and editor generated files
 .DS_Store
 
+# Ignore the folders
+Resources/
+test/
+
 
