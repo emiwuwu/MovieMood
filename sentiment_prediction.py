@@ -18,7 +18,7 @@ with open(TK_PATH, 'rb') as handle:
 
 # Define a function to decode sentiment based on the score
 def decode_sentiment(score):
-    return "Positive" if score >= 0.4 else "Negative"
+    return "Positive" if score >= 0.5 else "Negative"
 
 
 # Define a function to predict sentiment for a list of texts
