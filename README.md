@@ -14,8 +14,6 @@
 - [Usage](#usage)
 - [Datasets](#datasets)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ---
 
@@ -67,13 +65,4 @@ Here's how you can benefit from the project:
 - [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata): Containing metadata for approximately 5,000 movies from TMDb, this dataset provides details like titles, release dates, genres, popularity, and ratings. It serves as a valuable resource for both movie recommendations and analyzing the factors that impact a movie's success.
 
 ## Contributing
-
 - Pei-Ju Wu (Emily)
-
-## Contact
-
-Pei-Ju Wu
-
-- Email: emilywupeiju@gmail.com
-
-Project Link: [GitHub - MovieMood](https://github.com/emiwuwu/MovieMood)
