@@ -9,8 +9,6 @@
 - [About MovieMood](#about-moviemood)
   - [Sentiment Analysis](#sentiment-analysis)
   - [Movie Recommendation System](#movie-recommendation-system)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Datasets](#datasets)
 - [Contributing](#contributing)
@@ -40,17 +38,7 @@ The **Movie Recommendation System** is created to assist users in discovering ne
 #### Key Features:
 
 - Visual representation of movie popularity and ratings.
-- Content-based recommendations: Movies are suggested based on their descriptions.
-
-## Getting Started
-
-To get started with MovieMood, follow the instructions below.
-
-### Prerequisites
-
-- Python (3.7+)
-- pip
-- SQLite (for database)
+- Content-based recommender system: Movies are suggested based on their descriptions.
 
 ## Usage
 
@@ -65,4 +53,5 @@ Here's how you can benefit from the project:
 - [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata): Containing metadata for approximately 5,000 movies from TMDb, this dataset provides details like titles, release dates, genres, popularity, and ratings. It serves as a valuable resource for both movie recommendations and analyzing the factors that impact a movie's success.
 
 ## Contributing
+
 - Pei-Ju Wu (Emily)
