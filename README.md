@@ -38,6 +38,7 @@ The **Movie Recommendation System** is created to assist users in discovering ne
 #### Key Features:
 
 - Visual representation of movie popularity and ratings.
+- Utilization of natural language processing (NLP) techniques.
 - Content-based recommender system: Movies are suggested based on their descriptions.
 
 ## Usage
