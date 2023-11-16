@@ -27,7 +27,6 @@ MovieMood is a comprehensive project that combines two essential components: Sen
 
 #### Key Features:
 
-- Preprocessing of text data.
 - Utilization of natural language processing (NLP) techniques.
 - Sentiment classification is achieved through the implementation of deep neural network algorithms, including Convolutional Neural Networks (CNNs).
 
