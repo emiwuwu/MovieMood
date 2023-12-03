@@ -23,12 +23,26 @@ MovieMood is a comprehensive project that combines two essential components: Sen
 
 ### Sentiment Analysis
 
-**Sentiment analysis**, also known as opinion mining, is a powerful technique for extracting the emotional tone or sentiment expressed in a text. In this repository, sentiment analysis is applied to assess movie reviews and classify them as either positive or negative based on their content.
+**Sentiment analysis**, also referred to as opinion mining, is a powerful technique for extracting emotional tone or sentiment from text. It involves interpreting and categorizing emotions (positive, negative, or neutral) within text data, allowing organizations to gauge public sentiment towards specific words or topics. In this repository, sentiment analysis is applied to assess movie reviews and classify them as either positive or negative based on their content.
 
 #### Key Features:
 
 - Utilization of natural language processing (NLP) techniques.
 - Sentiment classification is achieved through the implementation of deep neural network algorithms, including Convolutional Neural Networks (CNNs).
+
+#### Model Performance:
+
+**Basic Model:**
+- Utilizes average pooling operations AND concludes with a final fully-connected layer.
+- Achieved an accuracy of **80.05%**. 
+
+**Complex Model**
+- Utilizes Convolutional Neural Networks (CNN).
+- Employs max pooling operations and concludes with a final fully-connected layer.
+- Applies L2 regularization to prevent overfitting.
+- Performance enhanced through callback mechanisms.
+- Attained an accuracy of **83.96%**.
+- Classification report highlights balanced precision, recall, and F1-scores around 0.84 for positive and negative sentiments.
 
 ### Movie Recommendation System
 
